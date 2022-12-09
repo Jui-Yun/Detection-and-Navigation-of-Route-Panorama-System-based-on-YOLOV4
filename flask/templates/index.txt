@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{{ url_for('static',  filename='favicon.ico') }}">
+    <title>迷航小幫手</title>
+  </head>
+
+‪  <body background="./static/background1.png" style=" background-repeat:no-repeat ;
+
+  background-size:100% 100%; 
+  background-attachment: fixed;
+
+  <header> 
+	  <center><h1>迷航小幫手</h1><center>	
+	</header>
+
+  <center><h2>上傳所在地影像檔</h2><center>
+  <center>
+    <form method="POST" enctype="multipart/form-data"  action="{{ url_for('upload_file') }}">
+      <input type="file" name="filename"  accept="image/*" required>
+      <input type="submit" value="上傳">
+    </form>
+  
+    <div>
+      <p><img src="./static/uploads/scan.jpg" alt="" width="300" height="400"/></p>
+    </div>
+
+    <input type="submit" value="開始辨識" onClick="window.alert('I told you not to click me!');">
+  <center>
+
+  <center><h2>辨識結果與路徑規劃</h2></center> 
+
+  <p>{{ans}}</p>
+
+  <center>
+
+
+    <script>
+
+      if (building = administ) {
+        <img width=600 height=600 src="./static/output/administ.jpg" name="x2"> 
+        <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+        <option value="./static/output/administ/administ_audio.jpg">視聽館</option>
+        <option value="./static/output/administ/administ_audioback.jpg">視聽館背面</option>
+        <option value="./static/output/administ/administ_library.jpg">圖書館</option>
+        <option value="./static/output/administ/administ_science.jpg">科學館</option>
+        <option value="./static/output/administ/administ_tower.jpg">鐘樓</option> 
+        <option value="./static/output/administ/administ_exercise.jpg">體育館</option>
+        <option value="./static/output/administ/administ_mingde.jpg">明德樓</option>
+        <option value="./static/output/administ/administ_swim.jpg">泳健館</option>
+        <option value="./static/output/administ/administ_creative.jpg">創意館</option>
+        <option value="./static/output/administ/administ_mainhall.jpg">禮堂</option>
+        <option value="./static/output/administ/administ_zhishan.jpg">至善樓</option>
+        <option value="./static/output/administ/administ_duxing.jpg">篤行樓</option>
+        <option value="./static/output/administ/administ_fanglan.jpg">芳蘭樓</option>
+        <option value="./static/output/administ/administ_wenhui.jpg">文薈樓</option>
+        <option value="./static/output/administ/administ_studentcenter.jpg">活動中心</option>
+        <option value="./static/output/administ/administ_dormitory1.jpg">第一宿舍</option>
+        <option value="./static/output/administ/administ_dormitory2.jpg">第二宿舍</option>
+        <option value="./static/output/administ/administ_gallery.jpg">美術館</option>
+        <option value="./static/output/administ/administ_doorway.jpg">大門</option> 
+        </SELECT>
+      }
+
+      else if (building = library){
+          <img width=600 height=600 src="./static/output/library.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/library/library_audio.jpg">視聽館</option>
+          <option value="./static/output/library/library_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/library/library_administ.jpg">行政大樓</option>
+          <option value="./static/output/library/library_science.jpg">科學館</option>
+          <option value="./static/output/library/library_tower.jpg">鐘樓</option> 
+          <option value="./static/output/library/library_exercise.jpg">體育館</option>
+          <option value="./static/output/library/library_mingde.jpg">明德樓</option>
+          <option value="./static/output/library/library_swim.jpg">泳健館</option>
+          <option value="./static/output/library/library_creative.jpg">創意館</option>
+          <option value="./static/output/library/library_mainhall.jpg">禮堂</option>
+          <option value="./static/output/library/library_zhishan.jpg">至善樓</option>
+          <option value="./static/output/library/library_duxing.jpg">篤行樓</option>
+          <option value="./static/output/library/library_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/library/library_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/library/library_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/library/library_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/library/library_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/library/library_gallery.jpg">美術館</option>
+          <option value="./static/output/library/library_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = audio){
+          <img width=600 height=600 src="./static/output/audio.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/audio/audio_administ.jpg">行政大樓</option>
+          <option value="./static/output/audio/audio_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/audio/audio_library.jpg">圖書館</option>
+          <option value="./static/output/audio/audio_science.jpg">科學館</option>
+          <option value="./static/output/audio/audio_tower.jpg">鐘樓</option> 
+          <option value="./static/output/audio/audio_exercise.jpg">體育館</option>
+          <option value="./static/output/audio/audio_mingde.jpg">明德樓</option>
+          <option value="./static/output/audio/audio_swim.jpg">泳健館</option>
+          <option value="./static/output/audio/audio_creative.jpg">創意館</option>
+          <option value="./static/output/audio/audio_mainhall.jpg">禮堂</option>
+          <option value="./static/output/audio/audio_zhishan.jpg">至善樓</option>
+          <option value="./static/output/audio/audio_duxing.jpg">篤行樓</option>
+          <option value="./static/output/audio/audio_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/audio/audio_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/audio/audio_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/audio/audio_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/audio/audio_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/audio/audio_gallery.jpg">美術館</option>
+          <option value="./static/output/audio/audio_doorway.jpg">大門</option>
+          </SELECT>
+      }
+
+      else if (building = science){
+          <img width=600 height=600 src="./static/output/science.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/science/science_audio.jpg">視聽館</option>
+          <option value="./static/output/science/science_library.jpg">圖書館</option>
+          <option value="./static/output/science/science_administ.jpg">行政大樓</option>
+          <option value="./static/output/science/science_tower.jpg">鐘樓</option> 
+          <option value="./static/output/science/science_exercise.jpg">體育館</option>
+          <option value="./static/output/science/science_mingde.jpg">明德樓</option>
+          <option value="./static/output/science/science_swim.jpg">泳健館</option>
+          <option value="./static/output/science/science_creative.jpg">創意館</option>
+          <option value="./static/output/science/science_mainhall.jpg">禮堂</option>
+          <option value="./static/output/science/science_zhishan.jpg">至善樓</option>
+          <option value="./static/output/science/science_duxing.jpg">篤行樓</option>
+          <option value="./static/output/science/science_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/science/science_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/science/science_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/science/science_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/science/science_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/science/science_gallery.jpg">美術館</option>
+          <option value="./static/output/science/science_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+      else if (building = tower){
+          <img width=600 height=600 src="./static/output/tower.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/tower/tower_audio.jpg">視聽館</option>
+          <option value="./static/output/tower/tower_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/tower/tower_library.jpg">圖書館</option>
+          <option value="./static/output/tower/tower_administ.jpg">行政大樓</option>
+          <option value="./static/output/tower/tower_science.jpg">科學館</option> 
+          <option value="./static/output/tower/tower_exercise.jpg">體育館</option>
+          <option value="./static/output/tower/tower_mingde.jpg">明德樓</option>
+          <option value="./static/output/tower/tower_swim.jpg">泳健館</option>
+          <option value="./static/output/tower/tower_creative.jpg">創意館</option>
+          <option value="./static/output/tower/tower_mainhall.jpg">禮堂</option>
+          <option value="./static/output/tower/tower_zhishan.jpg">至善樓</option>
+          <option value="./static/output/tower/tower_duxing.jpg">篤行樓</option>
+          <option value="./static/output/tower/tower_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/tower/tower_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/tower/tower_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/tower/tower_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/tower/tower_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/tower/tower_gallery.jpg">美術館</option>
+          <option value="./static/output/tower/tower_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = exercise){
+          <img width=600 height=600 src="./static/output/exercise.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/exercise/exercise_audio.jpg">視聽館</option>
+          <option value="./static/output/exercise/exercise_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/exercise/exercise_library.jpg">圖書館</option>
+          <option value="./static/output/exercise/exercise_science.jpg">科學館</option>
+          <option value="./static/output/exercise/exercise_tower.jpg">鐘樓</option> 
+          <option value="./static/output/exercise/exercise_administ.jpg">行政大樓</option>
+          <option value="./static/output/exercise/exercise_mingde.jpg">明德樓</option>
+          <option value="./static/output/exercise/exercise_swim.jpg">泳健館</option>
+          <option value="./static/output/exercise/exercise_creative.jpg">創意館</option>
+          <option value="./static/output/exercise/exercise_mainhall.jpg">禮堂</option>
+          <option value="./static/output/exercise/exercise_zhishan.jpg">至善樓</option>
+          <option value="./static/output/exercise/exercise_duxing.jpg">篤行樓</option>
+          <option value="./static/output/exercise/exercise_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/exercise/exercise_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/exercise/exercise_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/exercise/exercise_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/exercise/exercise_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/exercise/exercise_gallery.jpg">美術館</option>
+          <option value="./static/output/exercise/exercise_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = mingde){
+          <img width=600 height=600 src="./static/output/mingde.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/mingde/mingde_audio.jpg">視聽館</option>
+          <option value="./static/output/mingde/mingde_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/mingde/mingde_library.jpg">圖書館</option>
+          <option value="./static/output/mingde/mingde_science.jpg">科學館</option>
+          <option value="./static/output/mingde/mingde_tower.jpg">鐘樓</option> 
+          <option value="./static/output/mingde/mingde_exercise.jpg">體育館</option>
+          <option value="./static/output/mingde/mingde_administ.jpg">行政大樓</option>
+          <option value="./static/output/mingde/mingde_swim.jpg">泳健館</option>
+          <option value="./static/output/mingde/mingde_creative.jpg">創意館</option>
+          <option value="./static/output/mingde/mingde_mainhall.jpg">禮堂</option>
+          <option value="./static/output/mingde/mingde_zhishan.jpg">至善樓</option>
+          <option value="./static/output/mingde/mingde_duxing.jpg">篤行樓</option>
+          <option value="./static/output/mingde/mingde_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/mingde/mingde_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/mingde/mingde_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/mingde/mingde_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/mingde/mingde_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/mingde/mingde_gallery.jpg">美術館</option>
+          <option value="./static/output/mingde/mingde_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = swim){
+          <img width=600 height=600 src="./static/output/swim.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/swim/swim_audio.jpg">視聽館</option>
+          <option value="./static/output/swim/swim_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/swim/swim_library.jpg">圖書館</option>
+          <option value="./static/output/swim/swim_science.jpg">科學館</option>
+          <option value="./static/output/swim/swim_tower.jpg">鐘樓</option> 
+          <option value="./static/output/swim/swim_exercise.jpg">體育館</option>
+          <option value="./static/output/swim/swim_mingde.jpg">明德樓</option>
+          <option value="./static/output/swim/swim_administ.jpg">行政大樓</option>
+          <option value="./static/output/swim/swim_creative.jpg">創意館</option>
+          <option value="./static/output/swim/swim_mainhall.jpg">禮堂</option>
+          <option value="./static/output/swim/swim_zhishan.jpg">至善樓</option>
+          <option value="./static/output/swim/swim_duxing.jpg">篤行樓</option>
+          <option value="./static/output/swim/swim_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/swim/swim_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/swim/swim_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/swim/swim_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/swim/swim_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/swim/swim_gallery.jpg">美術館</option>
+          <option value="./static/output/swim/swim_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = creative){
+          <img width=600 height=600 src="./static/output/creative.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/creative/creative_audio.jpg">視聽館</option>
+          <option value="./static/output/creative/creative_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/creative/creative_library.jpg">圖書館</option>
+          <option value="./static/output/creative/creative_science.jpg">科學館</option>
+          <option value="./static/output/creative/creative_tower.jpg">鐘樓</option> 
+          <option value="./static/output/creative/creative_exercise.jpg">體育館</option>
+          <option value="./static/output/creative/creative_mingde.jpg">明德樓</option>
+          <option value="./static/output/creative/creative_swim.jpg">泳健館</option>
+          <option value="./static/output/creative/creative_administ.jpg">行政大樓</option>
+          <option value="./static/output/creative/creative_mainhall.jpg">禮堂</option>
+          <option value="./static/output/creative/creative_zhishan.jpg">至善樓</option>
+          <option value="./static/output/creative/creative_duxing.jpg">篤行樓</option>
+          <option value="./static/output/creative/creative_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/creative/creative_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/creative/creative_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/creative/creative_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/creative/creative_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/creative/creative_gallery.jpg">美術館</option>
+          <option value="./static/output/creative/creative_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = mainhall){
+          <img width=600 height=600 src="./static/output/mainhall.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/mainhall/mainhall_audio.jpg">視聽館</option>
+          <option value="./static/output/mainhall/mainhall_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/mainhall/mainhall_library.jpg">圖書館</option>
+          <option value="./static/output/mainhall/mainhall_science.jpg">科學館</option>
+          <option value="./static/output/mainhall/mainhall_tower.jpg">鐘樓</option> 
+          <option value="./static/output/mainhall/mainhall_exercise.jpg">體育館</option>
+          <option value="./static/output/mainhall/mainhall_mingde.jpg">明德樓</option>
+          <option value="./static/output/mainhall/mainhall_swim.jpg">泳健館</option>
+          <option value="./static/output/mainhall/mainhall_creative.jpg">創意館</option>
+          <option value="./static/output/mainhall/mainhall_administ.jpg">行政大樓</option>
+          <option value="./static/output/mainhall/mainhall_zhishan.jpg">至善樓</option>
+          <option value="./static/output/mainhall/mainhall_duxing.jpg">篤行樓</option>
+          <option value="./static/output/mainhall/mainhall_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/mainhall/mainhall_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/mainhall/mainhall_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/mainhall/mainhall_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/mainhall/mainhall_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/mainhall/mainhall_gallery.jpg">美術館</option>
+          <option value="./static/output/mainhall/mainhall_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = zhishan){
+          <img width=600 height=600 src="./static/output/zhishan.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/zhishan/zhishan_audio.jpg">視聽館</option>
+          <option value="./static/output/zhishan/zhishan_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/zhishan/zhishan_library.jpg">圖書館</option>
+          <option value="./static/output/zhishan/zhishan_science.jpg">科學館</option>
+          <option value="./static/output/zhishan/zhishan_tower.jpg">鐘樓</option> 
+          <option value="./static/output/zhishan/zhishan_exercise.jpg">體育館</option>
+          <option value="./static/output/zhishan/zhishan_mingde.jpg">明德樓</option>
+          <option value="./static/output/zhishan/zhishan_swim.jpg">泳健館</option>
+          <option value="./static/output/zhishan/zhishan_creative.jpg">創意館</option>
+          <option value="./static/output/zhishan/zhishan_mainhall.jpg">禮堂</option>
+          <option value="./static/output/zhishan/zhishan_administ.jpg">行政大樓</option>
+          <option value="./static/output/zhishan/zhishan_duxing.jpg">篤行樓</option>
+          <option value="./static/output/zhishan/zhishan_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/zhishan/zhishan_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/zhishan/zhishan_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/zhishan/zhishan_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/zhishan/zhishan_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/zhishan/zhishan_gallery.jpg">美術館</option>
+          <option value="./static/output/zhishan/zhishan_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = duxing){
+          <img width=600 height=600 src="./static/output/duxing.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/duxing/duxing_audio.jpg">視聽館</option>
+          <option value="./static/output/duxing/duxing_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/duxing/duxing_library.jpg">圖書館</option>
+          <option value="./static/output/duxing/duxing_science.jpg">科學館</option>
+          <option value="./static/output/duxing/duxing_tower.jpg">鐘樓</option> 
+          <option value="./static/output/duxing/duxing_exercise.jpg">體育館</option>
+          <option value="./static/output/duxing/duxing_mingde.jpg">明德樓</option>
+          <option value="./static/output/duxing/duxing_swim.jpg">泳健館</option>
+          <option value="./static/output/duxing/duxing_creative.jpg">創意館</option>
+          <option value="./static/output/duxing/duxing_mainhall.jpg">禮堂</option>
+          <option value="./static/output/duxing/duxing_zhishan.jpg">至善樓</option>
+          <option value="./static/output/duxing/duxing_administ.jpg">行政大樓</option>
+          <option value="./static/output/duxing/duxing_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/duxing/duxing_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/duxing/duxing_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/duxing/duxing_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/duxing/duxing_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/duxing/duxing_gallery.jpg">美術館</option>
+          <option value="./static/output/duxing/duxing_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = fanglan){
+          <img width=600 height=600 src="./static/output/fanglan.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/fanglan/fanglan_audio.jpg">視聽館</option>
+          <option value="./static/output/fanglan/fanglan_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/fanglan/fanglan_library.jpg">圖書館</option>
+          <option value="./static/output/fanglan/fanglan_science.jpg">科學館</option>
+          <option value="./static/output/fanglan/fanglan_tower.jpg">鐘樓</option> 
+          <option value="./static/output/fanglan/fanglan_exercise.jpg">體育館</option>
+          <option value="./static/output/fanglan/fanglan_mingde.jpg">明德樓</option>
+          <option value="./static/output/fanglan/fanglan_swim.jpg">泳健館</option>
+          <option value="./static/output/fanglan/fanglan_creative.jpg">創意館</option>
+          <option value="./static/output/fanglan/fanglan_mainhall.jpg">禮堂</option>
+          <option value="./static/output/fanglan/fanglan_zhishan.jpg">至善樓</option>
+          <option value="./static/output/fanglan/fanglan_duxing.jpg">篤行樓</option>
+          <option value="./static/output/fanglan/fanglan_administ.jpg">行政大樓</option>
+          <option value="./static/output/fanglan/fanglan_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/fanglan/fanglan_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/fanglan/fanglan_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/fanglan/fanglan_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/fanglan/fanglan_gallery.jpg">美術館</option>
+          <option value="./static/output/fanglan/fanglan_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = wenhui){
+          <img width=600 height=600 src="./static/output/wenhui.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/wenhui/wenhui_audio.jpg">視聽館</option>
+          <option value="./static/output/wenhui/wenhui_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/wenhui/wenhui_library.jpg">圖書館</option>
+          <option value="./static/output/wenhui/wenhui_science.jpg">科學館</option>
+          <option value="./static/output/wenhui/wenhui_tower.jpg">鐘樓</option> 
+          <option value="./static/output/wenhui/wenhui_exercise.jpg">體育館</option>
+          <option value="./static/output/wenhui/wenhui_mingde.jpg">明德樓</option>
+          <option value="./static/output/wenhui/wenhui_swim.jpg">泳健館</option>
+          <option value="./static/output/wenhui/wenhui_creative.jpg">創意館</option>
+          <option value="./static/output/wenhui/wenhui_mainhall.jpg">禮堂</option>
+          <option value="./static/output/wenhui/wenhui_zhishan.jpg">至善樓</option>
+          <option value="./static/output/wenhui/wenhui_duxing.jpg">篤行樓</option>
+          <option value="./static/output/wenhui/wenhui_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/wenhui/wenhui_administ.jpg">行政大樓</option>
+          <option value="./static/output/wenhui/wenhui_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/wenhui/wenhui_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/wenhui/wenhui_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/wenhui/wenhui_gallery.jpg">美術館</option>
+          <option value="./static/output/wenhui/wenhui_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = studentcenter){
+          <img width=600 height=600 src="./static/output/studentcenter.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/studentcenter/studentcenter_audio.jpg">視聽館</option>
+          <option value="./static/output/studentcenter/studentcenter_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/studentcenter/studentcenter_library.jpg">圖書館</option>
+          <option value="./static/output/studentcenter/studentcenter_science.jpg">科學館</option>
+          <option value="./static/output/studentcenter/studentcenter_tower.jpg">鐘樓</option> 
+          <option value="./static/output/studentcenter/studentcenter_exercise.jpg">體育館</option>
+          <option value="./static/output/studentcenter/studentcenter_mingde.jpg">明德樓</option>
+          <option value="./static/output/studentcenter/studentcenter_swim.jpg">泳健館</option>
+          <option value="./static/output/studentcenter/studentcenter_creative.jpg">創意館</option>
+          <option value="./static/output/studentcenter/studentcenter_mainhall.jpg">禮堂</option>
+          <option value="./static/output/studentcenter/studentcenter_zhishan.jpg">至善樓</option>
+          <option value="./static/output/studentcenter/studentcenter_duxing.jpg">篤行樓</option>
+          <option value="./static/output/studentcenter/studentcenter_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/studentcenter/studentcenter_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/studentcenter/studentcenter_administ.jpg">行政大樓</option>
+          <option value="./static/output/studentcenter/studentcenter_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/studentcenter/studentcenter_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/studentcenter/studentcenter_gallery.jpg">美術館</option>
+          <option value="./static/output/studentcenter/studentcenter_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = dormitory1){
+          <img width=600 height=600 src="./static/output/dormitory1.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/dormitory1/dormitory1_audio.jpg">視聽館</option>
+          <option value="./static/output/dormitory1/dormitory1_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/dormitory1/dormitory1_library.jpg">圖書館</option>
+          <option value="./static/output/dormitory1/dormitory1_science.jpg">科學館</option>
+          <option value="./static/output/dormitory1/dormitory1_tower.jpg">鐘樓</option> 
+          <option value="./static/output/dormitory1/dormitory1_exercise.jpg">體育館</option>
+          <option value="./static/output/dormitory1/dormitory1_mingde.jpg">明德樓</option>
+          <option value="./static/output/dormitory1/dormitory1_swim.jpg">泳健館</option>
+          <option value="./static/output/dormitory1/dormitory1_creative.jpg">創意館</option>
+          <option value="./static/output/dormitory1/dormitory1_mainhall.jpg">禮堂</option>
+          <option value="./static/output/dormitory1/dormitory1_zhishan.jpg">至善樓</option>
+          <option value="./static/output/dormitory1/dormitory1_duxing.jpg">篤行樓</option>
+          <option value="./static/output/dormitory1/dormitory1_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/dormitory1/dormitory1_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/dormitory1/dormitory1_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/dormitory1/dormitory1_administ.jpg">行政大樓</option>
+          <option value="./static/output/dormitory1/dormitory1_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/dormitory1/dormitory1_gallery.jpg">美術館</option>
+          <option value="./static/output/dormitory1/dormitory1_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = dormitory2){
+          <img width=600 height=600 src="./static/output/dormitory2.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/dormitory2/dormitory2_audio.jpg">視聽館</option>
+          <option value="./static/output/dormitory2/dormitory2_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/dormitory2/dormitory2_library.jpg">圖書館</option>
+          <option value="./static/output/dormitory2/dormitory2_science.jpg">科學館</option>
+          <option value="./static/output/dormitory2/dormitory2_tower.jpg">鐘樓</option> 
+          <option value="./static/output/dormitory2/dormitory2_exercise.jpg">體育館</option>
+          <option value="./static/output/dormitory2/dormitory2_mingde.jpg">明德樓</option>
+          <option value="./static/output/dormitory2/dormitory2_swim.jpg">泳健館</option>
+          <option value="./static/output/dormitory2/dormitory2_creative.jpg">創意館</option>
+          <option value="./static/output/dormitory2/dormitory2_mainhall.jpg">禮堂</option>
+          <option value="./static/output/dormitory2/dormitory2_zhishan.jpg">至善樓</option>
+          <option value="./static/output/dormitory2/dormitory2_duxing.jpg">篤行樓</option>
+          <option value="./static/output/dormitory2/dormitory2_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/dormitory2/dormitory2_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/dormitory2/dormitory2_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/dormitory2/dormitory2_administ.jpg">行政大樓</option>
+          <option value="./static/output/dormitory2/dormitory2_gallery.jpg">美術館</option>
+          <option value="./static/output/dormitory2/dormitory2_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = audioback){
+          img width=600 height=600 src="./static/output/audioback.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/audioback/audioback_audio.jpg">視聽館</option>
+          <option value="./static/output/audioback/audioback_administ.jpg">行政大樓</option>
+          <option value="./static/output/audioback/audioback_library.jpg">圖書館</option>
+          <option value="./static/output/audioback/audioback_science.jpg">科學館</option>
+          <option value="./static/output/audioback/audioback_tower.jpg">鐘樓</option> 
+          <option value="./static/output/audioback/audioback_exercise.jpg">體育館</option>
+          <option value="./static/output/audioback/audioback_mingde.jpg">明德樓</option>
+          <option value="./static/output/audioback/audioback_swim.jpg">泳健館</option>
+          <option value="./static/output/audioback/audioback_creative.jpg">創意館</option>
+          <option value="./static/output/audioback/audioback_mainhall.jpg">禮堂</option>
+          <option value="./static/output/audioback/audioback_zhishan.jpg">至善樓</option>
+          <option value="./static/output/audioback/audioback_duxing.jpg">篤行樓</option>
+          <option value="./static/output/audioback/audioback_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/audioback/audioback_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/audioback/audioback_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/audioback/audioback_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/audioback/audioback_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/audioback/audioback_gallery.jpg">美術館</option>
+          <option value="./static/output/audioback/audioback_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = gallery){
+          <img width=600 height=600 src="./static/output/gallery.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/gallery/gallery_audio.jpg">視聽館</option>
+          <option value="./static/output/gallery/gallery_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/gallery/gallery_library.jpg">圖書館</option>
+          <option value="./static/output/gallery/gallery_science.jpg">科學館</option>
+          <option value="./static/output/gallery/gallery_tower.jpg">鐘樓</option> 
+          <option value="./static/output/gallery/gallery_exercise.jpg">體育館</option>
+          <option value="./static/output/gallery/gallery_mingde.jpg">明德樓</option>
+          <option value="./static/output/gallery/gallery_swim.jpg">泳健館</option>
+          <option value="./static/output/gallery/gallery_creative.jpg">創意館</option>
+          <option value="./static/output/gallery/gallery_mainhall.jpg">禮堂</option>
+          <option value="./static/output/gallery/gallery_zhishan.jpg">至善樓</option>
+          <option value="./static/output/gallery/gallery_duxing.jpg">篤行樓</option>
+          <option value="./static/output/gallery/gallery_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/gallery/gallery_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/gallery/gallery_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/gallery/gallery_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/gallery/gallery_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/gallery/gallery_administ.jpg">行政大樓</option>
+          <option value="./static/output/gallery/gallery_doorway.jpg">大門</option> 
+          </SELECT>
+      }
+
+      else if (building = doorway){
+          <img width=600 height=600 src="./static/output/doorway.jpg" name="x2"> 
+          <SELECT onChange="document.x2.src=options[selectedIndex].value"> 
+          <option value="./static/output/doorway/doorway_audio.jpg">視聽館</option>
+          <option value="./static/output/doorway/doorway_audioback.jpg">視聽館背面</option>
+          <option value="./static/output/doorway/doorway_library.jpg">圖書館</option>
+          <option value="./static/output/doorway/doorway_science.jpg">科學館</option>
+          <option value="./static/output/doorway/doorway_tower.jpg">鐘樓</option> 
+          <option value="./static/output/doorway/doorway_exercise.jpg">體育館</option>
+          <option value="./static/output/doorway/doorway_mingde.jpg">明德樓</option>
+          <option value="./static/output/doorway/doorway_swim.jpg">泳健館</option>
+          <option value="./static/output/doorway/doorway_creative.jpg">創意館</option>
+          <option value="./static/output/doorway/doorway_mainhall.jpg">禮堂</option>
+          <option value="./static/output/doorway/doorway_zhishan.jpg">至善樓</option>
+          <option value="./static/output/doorway/doorway_duxing.jpg">篤行樓</option>
+          <option value="./static/output/doorway/doorway_fanglan.jpg">芳蘭樓</option>
+          <option value="./static/output/doorway/doorway_wenhui.jpg">文薈樓</option>
+          <option value="./static/output/doorway/doorway_studentcenter.jpg">活動中心</option>
+          <option value="./static/output/doorway/doorway_dormitory1.jpg">第一宿舍</option>
+          <option value="./static/output/doorway/doorway_dormitory2.jpg">第二宿舍</option>
+          <option value="./static/output/doorway/doorway_gallery.jpg">美術館</option>
+          <option value="./static/output/doorway/doorway_administ.jpg">行政大樓</option> 
+          </SELECT>
+      }
+    </script>
+
+  </center>
+
+  <center>
+    <footer>
+        畢業專題-迷航小幫手　   106 台北市大安區和平東路二段134號　  TEL: 02-2732-1104<br />
+          Copyright  ©  All rights reserved.
+    </footer>
+  </center>
+
+  </body>
+</html>
