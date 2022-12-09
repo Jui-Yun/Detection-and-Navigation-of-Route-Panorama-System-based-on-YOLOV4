@@ -1,0 +1,378 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 64, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 268 K-images (4 Kilo-batches_64) 
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00668.jpg: Predicted in 184.743000 milli-seconds.
+mainhall: 100%	(left_x:  406   top_y: 1656   width:  857   height: 1102)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00733.jpg: Predicted in 56.804000 milli-seconds.
+tower: 99%	(left_x:  292   top_y: 1449   width: 1577   height: 1351)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00006.jpg: Predicted in 54.736000 milli-seconds.
+administ: 95%	(left_x:  584   top_y:  737   width:   48   height:  199)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00527.jpg: Predicted in 55.730000 milli-seconds.
+mingde: 99%	(left_x:  120   top_y: 1590   width: 1753   height: 1140)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00620.jpg: Predicted in 54.823000 milli-seconds.
+creative: 100%	(left_x:  149   top_y:   -7   width: 1922   height: 2586)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00724.jpg: Predicted in 54.661000 milli-seconds.
+tower: 100%	(left_x:  -67   top_y: 1666   width: 1117   height: 1065)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00748.jpg: Predicted in 54.690000 milli-seconds.
+administ: 99%	(left_x:  786   top_y: 1975   width:  189   height:  579)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00784.jpg: Predicted in 54.733000 milli-seconds.
+zhishan: 98%	(left_x:   52   top_y: 1433   width: 2125   height:  407)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00224.jpg: Predicted in 55.520000 milli-seconds.
+audio: 97%	(left_x:  918   top_y: 3548   width: 1979   height:  412)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01879.jpg: Predicted in 55.364000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00551.jpg: Predicted in 54.698000 milli-seconds.
+mingde: 100%	(left_x:   13   top_y: 1623   width: 1913   height: 1418)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00480.jpg: Predicted in 54.806000 milli-seconds.
+exercise: 99%	(left_x:  -99   top_y:  410   width: 2393   height: 2767)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01835.jpg: Predicted in 54.821000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00681.jpg: Predicted in 54.831000 milli-seconds.
+mainhall: 91%	(left_x:   41   top_y: 1534   width:  880   height: 1585)
+mainhall: 93%	(left_x:  966   top_y: 1571   width:  912   height: 1489)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00487.jpg: Predicted in 56.379000 milli-seconds.
+exercise: 98%	(left_x:    7   top_y:  144   width: 2203   height: 3900)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00746.jpg: Predicted in 57.116000 milli-seconds.
+tower: 100%	(left_x:  329   top_y: 1448   width: 1572   height: 1341)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00215.jpg: Predicted in 56.623000 milli-seconds.
+audio: 99%	(left_x:  146   top_y: 3338   width: 2331   height:  459)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01838.jpg: Predicted in 57.015000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01932.jpg: Predicted in 56.015000 milli-seconds.
+library: 99%	(left_x:  783   top_y: 1900   width: 1335   height:  968)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00830.jpg: Predicted in 56.810000 milli-seconds.
+science: 80%	(left_x:  -52   top_y: 1031   width: 1124   height:  849)
+science: 84%	(left_x: 1183   top_y: 1272   width:  399   height:  610)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01891.jpg: Predicted in 56.227000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00578.jpg: Predicted in 56.122000 milli-seconds.
+swim: 100%	(left_x:  748   top_y: 2068   width:  782   height:  460)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00606.jpg: Predicted in 55.992000 milli-seconds.
+swim: 100%	(left_x:  590   top_y: 1845   width:  750   height:  486)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00146.jpg: Predicted in 56.753000 milli-seconds.
+audio: 85%	(left_x: 1672   top_y: 3691   width: 1333   height:  364)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00168.jpg: Predicted in 56.664000 milli-seconds.
+audio: 98%	(left_x:  748   top_y: 2820   width: 1470   height: 1107)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00743.jpg: Predicted in 56.007000 milli-seconds.
+tower: 100%	(left_x:  294   top_y: 1394   width: 1690   height: 1310)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00057.jpg: Predicted in 56.201000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00609.jpg: Predicted in 56.079000 milli-seconds.
+creative: 91%	(left_x:  218   top_y:  822   width: 1567   height: 1758)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01789.jpg: Predicted in 55.967000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00183.jpg: Predicted in 56.132000 milli-seconds.
+audio: 99%	(left_x:   34   top_y: 2830   width: 1665   height:  391)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00769.jpg: Predicted in 56.883000 milli-seconds.
+zhishan: 99%	(left_x:  117   top_y: 1583   width: 1995   height:  352)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00114.jpg: Predicted in 56.216000 milli-seconds.
+audio: 87%	(left_x: 1183   top_y: 3771   width: 1794   height:  282)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00507.jpg: Predicted in 56.078000 milli-seconds.
+mingde: 100%	(left_x: 1137   top_y: 2422   width:  525   height:  414)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01825.jpg: Predicted in 55.997000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00494.jpg: Predicted in 55.977000 milli-seconds.
+exercise: 99%	(left_x:   18   top_y:   76   width: 2188   height: 3978)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00227.jpg: Predicted in 56.302000 milli-seconds.
+audio: 87%	(left_x: 1183   top_y: 3771   width: 1794   height:  282)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00657.jpg: Predicted in 56.294000 milli-seconds.
+creative: 99%	(left_x:  190   top_y:  501   width: 1867   height: 2573)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00475.jpg: Predicted in 56.096000 milli-seconds.
+exercise: 98%	(left_x: -162   top_y:  967   width: 2544   height: 1769)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00483.jpg: Predicted in 56.212000 milli-seconds.
+exercise: 100%	(left_x:    4   top_y:  144   width: 2200   height: 3813)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00714.jpg: Predicted in 56.220000 milli-seconds.
+tower: 100%	(left_x:  537   top_y: 1623   width:  855   height:  844)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00750.jpg: Predicted in 56.002000 milli-seconds.
+administ: 99%	(left_x:  716   top_y: 1966   width:  186   height:  588)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00437.jpg: Predicted in 56.028000 milli-seconds.
+audio: 93%	(left_x:   10   top_y: 2815   width: 1718   height:  313)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00648.jpg: Predicted in 56.424000 milli-seconds.
+creative: 99%	(left_x:  192   top_y:  156   width: 1836   height: 2809)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00192.jpg: Predicted in 56.062000 milli-seconds.
+science: 99%	(left_x:  156   top_y:  875   width:  390   height:  236)
+science: 81%	(left_x:  683   top_y:  925   width:  246   height:  194)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00725.jpg: Predicted in 56.241000 milli-seconds.
+tower: 100%	(left_x:  314   top_y: 1798   width:  997   height:  937)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00166.jpg: Predicted in 55.921000 milli-seconds.
+audio: 97%	(left_x: 1165   top_y: 2822   width: 1583   height: 1113)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01792.jpg: Predicted in 56.062000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01904.jpg: Predicted in 56.273000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00064.jpg: Predicted in 56.273000 milli-seconds.
+library: 54%	(left_x: 2653   top_y: 1060   width:  387   height:  999)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01923.jpg: Predicted in 56.107000 milli-seconds.
+science: 99%	(left_x:  156   top_y:  875   width:  390   height:  236)
+science: 81%	(left_x:  683   top_y:  925   width:  246   height:  194)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01787.jpg: Predicted in 56.180000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00080.jpg: Predicted in 56.103000 milli-seconds.
+audio: 99%	(left_x:   14   top_y: 2981   width: 1328   height:  364)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00580.jpg: Predicted in 55.997000 milli-seconds.
+swim: 99%	(left_x:  512   top_y: 2256   width:  810   height:  479)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00604.jpg: Predicted in 55.985000 milli-seconds.
+swim: 100%	(left_x:  837   top_y: 2083   width:  787   height:  500)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00579.jpg: Predicted in 56.378000 milli-seconds.
+swim: 100%	(left_x:  398   top_y: 2299   width:  808   height:  470)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00089.jpg: Predicted in 56.267000 milli-seconds.
+audio: 98%	(left_x:   -6   top_y: 2972   width: 1006   height:  346)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00683.jpg: Predicted in 56.402000 milli-seconds.
+mainhall: 91%	(left_x:  179   top_y: 1381   width: 1101   height: 1581)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00646.jpg: Predicted in 56.349000 milli-seconds.
+creative: 99%	(left_x:  245   top_y:  682   width: 1742   height: 2472)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00171.jpg: Predicted in 56.159000 milli-seconds.
+audio: 99%	(left_x:  121   top_y: 3014   width: 1204   height: 1019)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01778.jpg: Predicted in 56.132000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00704.jpg: Predicted in 56.100000 milli-seconds.
+mainhall: 99%	(left_x: 1170   top_y: 1548   width:  733   height: 1299)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00594.jpg: Predicted in 55.970000 milli-seconds.
+swim: 100%	(left_x:  521   top_y: 2080   width:  683   height:  386)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00759.jpg: Predicted in 56.041000 milli-seconds.
+science: 100%	(left_x:  615   top_y: 1684   width: 1115   height:  780)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01953.jpg: Predicted in 56.303000 milli-seconds.
+library: 97%	(left_x:  916   top_y: 2084   width: 1716   height: 1009)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00737.jpg: Predicted in 56.156000 milli-seconds.
+tower: 98%	(left_x:  352   top_y: 1453   width: 1571   height: 1402)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00047.jpg: Predicted in 56.270000 milli-seconds.
+library: 100%	(left_x:  975   top_y: 2224   width: 1119   height: 1120)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00793.jpg: Predicted in 55.922000 milli-seconds.
+zhishan: 100%	(left_x:  112   top_y: 1417   width: 1999   height:  555)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00177.jpg: Predicted in 55.976000 milli-seconds.
+audio: 97%	(left_x:   53   top_y: 2695   width: 1624   height:  340)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00521.jpg: Predicted in 55.922000 milli-seconds.
+mingde: 100%	(left_x:  265   top_y: 1802   width: 1475   height: 1075)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00129.jpg: Predicted in 56.129000 milli-seconds.
+audio: 99%	(left_x:  457   top_y: 2660   width: 2136   height: 1297)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00712.jpg: Predicted in 56.045000 milli-seconds.
+tower: 100%	(left_x:  572   top_y: 1684   width:  784   height:  879)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00279.jpg: Predicted in 56.112000 milli-seconds.
+audio: 94%	(left_x:  381   top_y: 2858   width: 2275   height: 1172)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/01913.jpg: Predicted in 57.202000 milli-seconds.
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00121.jpg: Predicted in 55.940000 milli-seconds.
+audio: 92%	(left_x: 2154   top_y: 3659   width:  883   height:  335)
+Enter Image Path:  Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+data/obj/00591.jpg: Predicted in 56.161000 milli-seconds.
+swim: 100%	(left_x:  746   top_y: 2216   width:  714   height:  394)
+Enter Image Path: 
