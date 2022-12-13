@@ -40,7 +40,7 @@ The main purpose of this system is to **identify the street view of areas that c
 5. **Users**  
 This system is mainly designed for visitors who are **not familiar with the campus of National Taipei University of Education**, including: new students, transfer students, on-campus visitors, visitors with official needs, etc.  
 
-6. **Development Method**
+6. **Development Method**  
 Step.01  LabelImage  
 <img src="./images/02.png" width="80%">
 
