@@ -26,7 +26,7 @@ In this system (as shown in Figure 1), the users can **determine their exact pos
 (E) The system plans the route and displays the best route to travel.  
 (F) If you want to plan your route directly, change your departure location directly.  
 
-3. **Features**
+3. **Features**  
 The main purpose of this system is to **identify the street view of areas that cannot be clearly identified by satellite navigation, taking pictures of mobile devices to determine the user's current location.** In addition, the system also provides a **navigation** function, which allows users to automatically navigate through the selection of destination location through route planning technology, so as to help visitors in need to visit the campus more smoothly.
 
 4. **Technical Skills**
