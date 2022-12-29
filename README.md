@@ -56,13 +56,13 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
         <img src="./images/05.png" width="80%">
 
     Step.05  Flask Runner (Simple)
-        <img src="./images/06.png" width="80%">
+        <img src="./images/06.png" width="50%">  
 
     Step.06  Flask: Web Image Upload
-        <img src="./images/07.png" width="80%">
+        <img src="./images/07.png" width="50%">  
 
     Step.07  Landmark and Route Navigation
-        <img src="./images/08.jpg" width="80%">
+        <img src="./images/08.jpg" width="50%">  
 
 
 7. **Conclusion**  
