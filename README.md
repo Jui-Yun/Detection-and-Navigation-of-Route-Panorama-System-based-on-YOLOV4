@@ -71,7 +71,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     In the future, we also hope to continue in-depth research on the computer vision, deep learning and image processing technologies used in this system. Combined with the IoT, cloud computing, blockchain and other technologies, we can analyze object detection and image processing problems from a more professional perspective, conduct intelligent control and satellite detection research, which extends the system to more related applications.
 
 # How to train a custom yolov4 model  
-## 0. Innitial Download  
+## 0. Initial Download  
 - official darknet(https://github.com/AlexeyAB/darknet)
 - official pre-trained weights(https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137)
 ## 1. Getting Start - GPU Settings
