@@ -238,7 +238,6 @@ def move_forward():
      * Serving Flask app 'app'
      * Debug mode: on
      * Running on http://127.0.0.1:5000
-    Press CTRL+C to quit
      * Restarting with stat
      * Debugger is active!
      * Debugger PIN: 134-693-687
