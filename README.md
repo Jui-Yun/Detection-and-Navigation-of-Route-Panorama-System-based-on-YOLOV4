@@ -185,3 +185,63 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     !./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/test.txt> result.txt -thresh 0.3 
     
     ```
+
+# How to build up the Flask System
+## 0.Installing Flask
+
+    To install Flask, run the following command:
+    ```
+    pip install flask
+    ```
+## 1. Design the Flask API
+    ```
+    # app.py
+    @app.route('/')
+    def index():
+        return render_template('index.html')
+    ...
+    ...
+    @app.route("/forward/", methods=['POST'])
+def move_forward():
+    # Scanning picture which user uploads
+
+    os.chdir('../../darknet')
+
+    os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights ../flask/src/static/uploads/scan.jpg -thresh 0.3')
+    os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/scan.txt> result.txt -thresh 0.3')
+    ...
+    ...
+    if __name__ == "__main__":
+    app.run(debug=True)
+    ```
+    # index.html
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../static/favicon.ico">
+        <title>迷航小幫手</title>
+        <style>
+            .upload {
+    ...
+    ...
+    ```
+    
+## 2. Run the System
+
+1. Run the application using the **python app.py** command.
+    ```
+    python app.py
+    ```
+2. Once the application is running the output will be something like this:
+    ```
+     * Serving Flask app 'app'
+     * Debug mode: on
+    WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+     * Running on http://127.0.0.1:5000
+    Press CTRL+C to quit
+     * Restarting with stat
+     * Debugger is active!
+     * Debugger PIN: 134-693-687
+     ```
+3. Open a browser and type in the URL http://127.0.0.1:5000/, then you will receive the system.
