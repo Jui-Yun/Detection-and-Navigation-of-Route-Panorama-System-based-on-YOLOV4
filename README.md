@@ -197,7 +197,6 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 # How to build up the Flask System
 ## 0.Installing Flask
     To install Flask, run the following command:  
-  
     ```
     pip install flask
     ```
@@ -222,8 +221,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     if __name__ == "__main__":
     app.run(debug=True)
     ```
-  
-  
+    
     ```
     # index.html
     <html>
