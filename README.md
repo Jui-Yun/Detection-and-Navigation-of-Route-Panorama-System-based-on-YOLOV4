@@ -190,8 +190,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 3. Test for test.txt images
   
     ```
-    !./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/test.txt> result.txt -thresh 0.3 
-    
+    !./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/test.txt> result.txt -thresh 0.3
     ```
 
 # How to build up the Flask System
