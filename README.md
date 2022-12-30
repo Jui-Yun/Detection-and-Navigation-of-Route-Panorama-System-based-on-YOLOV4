@@ -97,6 +97,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 3. Copy the yolov4-custom.cfg file so that it is now in /darknet/cfg/ folder 
 
     For the configuration file, we need to change some parameters inside.  
+  
     ```
     # yolov4-custom.cfg
     [net]
@@ -121,6 +122,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     ...
     ...
     ```
+  
 4. Copy the obj.names and obj.data files from your drive so that they are now in /darknet/data/ folder 
 
     ```
@@ -142,6 +144,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     names = data/obj.names
     backup = (the path for you to save the trained weights)
     ```
+  
 5. Transform data
   
     For obj dataset, you can run process.py.
@@ -157,6 +160,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 1. Train your custom detector!
 
     You can uncomment %%capture below if you run into memory issues or your Colab is crashing.  
+  
     ```
     # %%capture
     !./darknet detector train data/obj.data cfg/yolov4-custom.cfg yolov4.conv.137 -dont_show -map
@@ -165,22 +169,26 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 2. Check Performance
 
     You can check the mAP for all the saved weights to see which gives the best results ( xxxx here is the saved weight number like 4000, 5000 or 6000 snd so on )
+  
     ```
     !./darknet detector map data/obj.data cfg/yolov4-custom.cfg /home/jcwang/YOLOV4_TRAINING/yolov4_elevenclasses/training/yolov4-custom_best.weights -points 0
     ```
   
 ## 4. Test with Images
 1. Set your custom cfg to test mode
+  
     ```
     !sed -i 's/batch=64/batch=1/' yolov4-custom.cfg
     !sed -i 's/subdivisions=16/subdivisions=1/' yolov4-custom.cfg
     ```
 2. Test for only one image
+  
     ```
     !./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights ../mask_test_images/00073.jpg -thresh 0.3 
     ```
     
 3. Test for test.txt images
+  
     ```
     !./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/test.txt> result.txt -thresh 0.3 
     
@@ -190,6 +198,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 ## 0.Installing Flask
 
     To install Flask, run the following command:
+  
     ```
     pip install flask
     ```
@@ -214,6 +223,8 @@ def move_forward():
     if __name__ == "__main__":
     app.run(debug=True)
     ```
+  
+    ```
     # index.html
     <html>
 
@@ -230,10 +241,12 @@ def move_forward():
 ## 2. Run the System
 
 1. Run the application using the **python app.py** command.
+  
     ```
     python app.py
     ```
 2. Once the application is running the output will be something like this:
+  
     ```
      * Serving Flask app 'app'
      * Debug mode: on
@@ -242,6 +255,7 @@ def move_forward():
      * Debugger is active!
      * Debugger PIN: 134-693-687
      ```
+   
 3. Open a browser and type in the URL http://127.0.0.1:5000/, then you will receive the system.
 
 # Reference
