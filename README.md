@@ -199,43 +199,43 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 To install Flask, run the following command:  
     
 ```
-    pip install flask
+pip install flask
 ```
 ## 1. Design the Flask API
 ```
-    # app.py
-    @app.route('/')
-    def index():
-        return render_template('index.html')
+# app.py
+@app.route('/')
+def index():
+    return render_template('index.html')
+...
+...
+@app.route("/forward/", methods=['POST'])
+def move_forward():
+    # Scanning picture which user uploads
+
+    os.chdir('../../darknet')
+
+    os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights ../flask/src/static/uploads/scan.jpg -thresh 0.3')
+    os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/scan.txt> result.txt -thresh 0.3')
     ...
     ...
-    @app.route("/forward/", methods=['POST'])
-    def move_forward():
-        # Scanning picture which user uploads
-
-        os.chdir('../../darknet')
-
-        os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights ../flask/src/static/uploads/scan.jpg -thresh 0.3')
-        os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/scan.txt> result.txt -thresh 0.3')
-        ...
-        ...
-    if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == "__main__":
+app.run(debug=True)
 ```
     
     
 ```
-    # index.html
-    <html>
+# index.html
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <link rel="shortcut icon" href="../static/favicon.ico">
-        <title>迷航小幫手</title>
-        <style>
-            .upload {
-        ...
-        ...
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <title>迷航小幫手</title>
+    <style>
+        .upload {
+    ...
+    ...
 ```
   
   
