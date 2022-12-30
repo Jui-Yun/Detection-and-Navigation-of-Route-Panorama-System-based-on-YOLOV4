@@ -167,16 +167,68 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     │   │
     |   └───cfg
     |   |   |   yolov4-custom.cfg
+    |   |   |
     |   |
-    │   └───cfg
-    │       │   file111.txt
-    │       │   file112.txt
-    │       │   ...
-    │   
+    │   └───data
+    |       |   obj.data
+    |       |   obj.names
+    |       |   train.txt
+    |       |   test.txt
+    |       |
+    │       └───labels
+    |       |   |   ...
+    |       |   |
+    |       |
+    |       └───obj
+    |           |   0001.jpg
+    |           |   0002.jpg
+    |           |   ...
+    |           |
+    |
     └───flask
-        │   file021.txt
-        │   file022.txt
+    |   └───src
+    |       │   app.py
+    |       │   
+    |       └───scripts
+    |       |   |   javascript.html
+    |       |   |
+    |       |
+    |       └───static
+    |       |   |   background1.png
+    |       |   |   background.png
+    |       |   |   favicon.ico
+    |       |   |   map.jpg
+    |       |   |
+    |       |   └───css
+    |       |   |   |   bootstrap.css
+    |       |   |   |   main.css
+    |       |   |   |
+    |       |   |
+    |       |   └───output
+    |       |   |   |   administ.jpg
+    |       |   |   |   audio.jpg
+    |       |   |   |   ...
+    |       |   |   └───administ
+    |       |   |   |   |   ...
+    |       |   |   |   |
+    |       |   |   |
+    |       |   |   ...
+    |       |   |
+    |       |   └───uploads
+    |       |       |   scan.jpg
+    |       |       |
+    |       |
+    |       └───templates
+    |           |   index.html
+    |           
     └───mask_test_images
+    |   |   scan.jpg
+    |   |
+    |
+    └───training
+        |   yolov4-custom_last.weights
+        |   yolov4-custom_best.weights
+        |
     ```
 
 ## 3. Train Custom-Detector
