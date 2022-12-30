@@ -196,14 +196,12 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 
 # How to build up the Flask System
 ## 0.Installing Flask
-
     To install Flask, run the following command:  
   
     ```
     pip install flask
     ```
-## 1. Design the Flask API  
-  
+## 1. Design the Flask API
     ```
     # app.py
     @app.route('/')
