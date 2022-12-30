@@ -1,0 +1,1 @@
+../flask/src/static/uploads/scan.jpg
