@@ -198,7 +198,6 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 ## 0.Installing Flask
 
     To install Flask, run the following command:
-  
     ```
     pip install flask
     ```
@@ -241,12 +240,10 @@ def move_forward():
 ## 2. Run the System
 
 1. Run the application using the **python app.py** command.
-  
     ```
     python app.py
     ```
 2. Once the application is running the output will be something like this:
-  
     ```
      * Serving Flask app 'app'
      * Debug mode: on
