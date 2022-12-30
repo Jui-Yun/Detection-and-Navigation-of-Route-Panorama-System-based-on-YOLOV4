@@ -333,6 +333,9 @@ app.run(debug=True)
    
 3. Open a browser and type in the URL http://127.0.0.1:5000/, then you will receive the system.
 
+# Additional  
+You can also check my [training weights]() and [labeled source data]().
+
 # Reference
 1. https://github.com/kiyoshiiriemon/yolov4_darknet
 2. https://github.com/Tianxiaomo/pytorch-YOLOv4
