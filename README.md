@@ -197,7 +197,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 # How to build up the Flask System
 ## 0.Installing Flask
 
-    To install Flask, run the following command:
+    To install Flask, run the following command:  
     ```
     pip install flask
     ```
@@ -210,18 +210,18 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     ...
     ...
     @app.route("/forward/", methods=['POST'])
-def move_forward():
-    # Scanning picture which user uploads
+    def move_forward():
+        # Scanning picture which user uploads
 
-    os.chdir('../../darknet')
+        os.chdir('../../darknet')
 
-    os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights ../flask/src/static/uploads/scan.jpg -thresh 0.3')
-    os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/scan.txt> result.txt -thresh 0.3')
-    ...
-    ...
+        os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights ../flask/src/static/uploads/scan.jpg -thresh 0.3')
+        os.system('./darknet detector test data/obj.data cfg/yolov4-custom.cfg ../training/yolov4-custom_best.weights -ext_output -dont_show < ../darknet/data/scan.txt> result.txt -thresh 0.3')
+        ...
+        ...
     if __name__ == "__main__":
     app.run(debug=True)
-    ```
+    ```  
   
     ```
     # index.html
@@ -239,11 +239,11 @@ def move_forward():
     
 ## 2. Run the System
 
-1. Run the application using the **python app.py** command.
+1. Run the application using the **python app.py** command.  
     ```
     python app.py
     ```
-2. Once the application is running the output will be something like this:
+2. Once the application is running the output will be something like this:  
     ```
      * Serving Flask app 'app'
      * Debug mode: on
