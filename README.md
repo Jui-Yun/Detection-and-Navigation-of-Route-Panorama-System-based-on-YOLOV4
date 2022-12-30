@@ -124,7 +124,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 4. Copy the obj.names and obj.data files from your drive so that they are now in /darknet/data/ folder 
 
     ```
-    # obj.data
+    # obj.names
     administ
     library
     audio
