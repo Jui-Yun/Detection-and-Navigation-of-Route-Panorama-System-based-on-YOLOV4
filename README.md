@@ -334,7 +334,7 @@ app.run(debug=True)
 3. Open a browser and type in the URL http://127.0.0.1:5000/, then you will receive the system.
 
 # Additional  
-You can also check my [training weights](https://drive.google.com/drive/folders/1h_JXv8LdxF_5Jr693ChekcCtqWG0NH2m?usp=share_link) and [labeled source data](https://drive.google.com/file/d/14L6GomQymsH-bJapwgSyciXTOB6wXYMo/view?usp=share_link).
+You can also check my [training weights]([https://drive.google.com/drive/folders/1h_JXv8LdxF_5Jr693ChekcCtqWG0NH2m?usp=share_link](https://drive.google.com/file/d/1B3QCMlpZzqg9H6_gqETTwlTo4y3B9-zy/view?usp=share_link) and [labeled source data](https://drive.google.com/file/d/14L6GomQymsH-bJapwgSyciXTOB6wXYMo/view?usp=share_link).
 
 # Reference
 1. https://github.com/kiyoshiiriemon/yolov4_darknet
