@@ -202,7 +202,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     pip install flask
     ```
 ## 1. Design the Flask API
-    ```
+    ```python=
     # app.py
     @app.route('/')
     def index():
@@ -223,7 +223,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     app.run(debug=True)
     ```  
   
-    ```
+    ```python=
     # index.html
     <html>
 
@@ -240,7 +240,7 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 ## 2. Run the System
 
 1. Run the application using the **python app.py** command.  
-    ```
+    ```python=
     python app.py
     ```
 2. Once the application is running the output will be something like this:  
