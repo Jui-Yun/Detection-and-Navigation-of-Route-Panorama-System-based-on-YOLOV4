@@ -155,6 +155,29 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
     ...
     ...
     ```
+6. After all, you can check the file dictory like this:
+    ```
+    project
+    │   README.md
+    │
+    └───darknet
+    │   │   process.py
+    │   │   yolov4.conv.137
+    │   │   ...
+    │   │
+    |   └───cfg
+    |   |   |   yolov4-custom.cfg
+    |   |
+    │   └───cfg
+    │       │   file111.txt
+    │       │   file112.txt
+    │       │   ...
+    │   
+    └───flask
+        │   file021.txt
+        │   file022.txt
+    └───mask_test_images
+    ```
 
 ## 3. Train Custom-Detector
 1. Train your custom detector!
