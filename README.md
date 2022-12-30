@@ -198,11 +198,13 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
 ## 0.Installing Flask
 
     To install Flask, run the following command:  
+  
     ```
     pip install flask
     ```
-## 1. Design the Flask API
-    ```python=
+## 1. Design the Flask API  
+  
+    ```
     # app.py
     @app.route('/')
     def index():
@@ -221,9 +223,10 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
         ...
     if __name__ == "__main__":
     app.run(debug=True)
-    ```  
+    ```
   
-    ```python=
+  
+    ```
     # index.html
     <html>
 
@@ -236,14 +239,17 @@ Therefore, we developed the "Trek Helper" system, which uses the self-photograph
         ...
         ...
     ```
-    
+  
+  
 ## 2. Run the System
 
 1. Run the application using the **python app.py** command.  
-    ```python=
+  
+    ```
     python app.py
     ```
 2. Once the application is running the output will be something like this:  
+  
     ```
      * Serving Flask app 'app'
      * Debug mode: on
